@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# Tool Name :- IP-Tracer
+
+
+case "$1" in
+  -m)
+    php modules/.tracem.php
+  ;;
+  -t)
+    case "$#" in
+    2)
+      php modules/.traceip.php $2
+    ;;
+    *)
+      echo "erro: argumentos inválidos !!"
+      echo "use: trace -t <target_ip>"
+    ;;
+    esac
+ 
+  ;;
+  start)
+    php .IP-Tracer.php
+    exit
+  ;;
+  -rm)
+    php modules/.uninstall.php
+    exit
+  ;;
+  *)
+    echo "Usage: trace [command]... [arguments]..."
+    echo " Commands:"
+    echo " -t <target_ip>      para rastrear o ip de destino."
+    echo " -m                  para rastrear seu próprio ip."
+    echo " -h                  para mostrar ajuda."
+    echo " -u                  atualizar o ip-tracer."
+    echo " help                para mostrar ajuda."
+    echo " update              atualizar o ip-trace."
+    echo " start               para iniciar o menu ip-tracer."
+esac
