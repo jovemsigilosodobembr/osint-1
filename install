@@ -1,0 +1,11 @@
+apt autoclean -y 
+apt autoremove -y 
+
+
+apt-get install python
+apt-get install python2
+apt-get install python3
+apt autoclean
+    
+    
+   
