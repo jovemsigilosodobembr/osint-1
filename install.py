@@ -1,60 +1,44 @@
-import os
-import time
+echo "Bem Vindos ao osint"
 
 
-os.system('cls||clear')
-time.sleep(1)
-
-def banner():
-    print('''\033[33m
-    
-===================================    
- ### ###  #####    ##  ##   ##  ##
- #######  ##       ### ##   ##  ##
- ## # ##  ####     ######   ##  ##
- ## # ##  ##       ## ###   ##  ##
- ##   ##  #####    ##  ##    ####
- ===================================
-
-           
-           Gilmar Filho
+            Gilmar Filho
         =============================
              '//||\\`
                ''`` 
-Espero ter te ajudado com esse script\033[m''')
-banner()
-print('\n')
-menu = 0
-while menu != 7:
-    menu = int(input(('''
-    [ 1 ] Youtube
-    [ 2 ] Intalar Todas As Dependencias
+
+sleep(5)
+
+cls||clear
+
+sleep(4)
+
+
+ echo "Autualizando os repostitorio"
+  
+sleep(3)
+
+apt-get update
+apt-get upgrade
+    
+ echo "Instalando as dependicias"
+sleep(4)
+
+apt install git
+apt-get install
+    
+ apt-get install python
+ apt-get install python2
+ apt-get install python3
    
+
     
-    Coloque a opção desejada: ''')))
-    if menu == 2:
-     os.system('cls||clear')
-    
-    
-    print('\n')
-    
-     if menu == 2:
-    print("Autualizando os repostitorio")
-    os.system("apt-get update")
-    os.system("apt-get upgrade")
-    
-    print("Instalando as dependicias")
-    
-    os.system('apt install git')
-    os.system("apt-get install")
-    
-    print("Instalando o python")
-    
-    os.system("apt-get install python")
-    os.system("apt-get install python2")
-    os.system("apt-get install python3")
-    
-    
-    print('\n')
-    
-   
+
+  echo "Bem Vindos ao osint"
+
+
+            Gilmar Filho
+        =============================
+             '//||\\`
+               ''`` 
+                
+  sleep(2)              
